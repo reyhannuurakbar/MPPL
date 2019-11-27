@@ -48,6 +48,7 @@ class PesananController extends Controller
       $pesanan->status = 'Pending';
       // $statuspemesanan = input('statuspemesanan');
       $pesanan->save();
+      // dd($pesanan);
       return redirect('/pay');
     }
 }

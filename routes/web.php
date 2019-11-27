@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-//view
+//User
 Route::get('/','HomeController@index')
 	->name('home');
 
@@ -31,7 +31,6 @@ Route::get('/blog','BlogController@index')
 Route::get('/details/{slug}','DetailsController@index')
 	->name('details');
 
-// 
 Route::get('/pay','PayController@index')
 	->name('pay');
 
@@ -42,12 +41,6 @@ Route::POST('/insertpesanan','PesananController@add');
 
 Route::get('/chekout','CheckoutController@index')
 	->name('chekout');
-
-Route::get('/chekout','CheckoutController@destroy')
-	->name('chekout.destroy');
-
-
-
 
 
 //Multi auth admin
@@ -66,6 +59,6 @@ Route::prefix('admin')
 
 	});
 
-
+//Auth
 
 Auth::routes(['verify'=> true]);

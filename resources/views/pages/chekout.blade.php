@@ -54,40 +54,29 @@
                 <tr>
                   <td scope="col"><strong>Nama</strong></td>
                   <td scope="col"><strong>Restoran</strong></td>
-                  <td scope="col"><strong>Paket</strong></td>
+                  <td scope="col"><strong>Jumlah Orang</strong></td>
                   <td scope="col"><strong>Tanggal</strong></td>
                   <td scope="col"><strong>Waktu</strong></td>
-                  <td scope="col"><strong>Jumlah Orang</strong></td>
                   <td scope="col"><strong>Status Booking</strong></td>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td class="align-middle">Devin Purnawansyah</td>
-                  <td class="align-middle">Hanamasha</td>
-                  <td class="align-middle">1</td>
-                  <td class="align-middle">22 November 2019</td>
-                  <td class="align-middle">08 PM to 10 PM</td>
-                  <td class="align-middle">6</td>
-                  <td class="align-middle">
-                    <a href="#">
-                        <button type="button" class="btn btn-success btn-sm">Booking Berhasil</button>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                    <td class="align-middle">Devin Purnawansyah</td>
-                    <td class="align-middle">Shabu Hachi</td>
-                    <td class="align-middle">3</td>
-                    <td class="align-middle">26 November 2019</td>
-                    <td class="align-middle">08 PM to 10 PM</td>
-                    <td class="align-middle">2</td>
-                    <td class="align-middle">
-                      <a href="#">
-                          <button type="button" class="btn btn-success btn-sm">Booking Berhasil</button>
-                      </a>
-                    </td>
-                  </tr>
+                @if(count($pesanan) >0 )
+                    @foreach($pesanan -> all() as $book)
+                        <tr>
+                            <td class="align-middle">{{$book->nama}}</td>
+                            <td class="align-middle">{{$book->id_restoran}}</td>
+                            <td class="align-middle">{{$book->jumlah}}</td>
+                            <td class="align-middle">{{$book->tanggal}}</td>
+                            <td class="align-middle">{{$book->jam}}</td>
+                            <td class="align-middle">
+                                <a href="#">
+                                    <button type="button" class="btn btn-success btn-sm">{{$book->status}}</button>
+                                </a>
+                            </td>
+                        </tr>
+                     @endforeach
+                @endif
               </tbody>
              </table>
            </font>

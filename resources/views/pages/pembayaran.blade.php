@@ -28,31 +28,31 @@
                       
                           <tr>
                             <th width="50%">Nama</th>
-                          <td width="50%" class="text-left">{{$book->nama}}</td>
+                          <td width="50%" class="text-left">{{$last->nama}}</td>
                           </tr>
                           <tr>
                             <th width="50%">Jumlah Orang</th>
-                            <td width="50%" class="text-left">{{$book->jumlah}} Orang</td>
+                            <td width="50%" class="text-left">{{$last->jumlah}} Orang</td>
                           </tr>
                           <tr>
                             <th width="50%">Restoran</th>
-                            <td width="50%" class="text-left">{{$book->restoran}}</td>
+                            <td width="50%" class="text-left">{{$last->restoran}}</td>
                           </tr>
                           <tr>
                             <th width="50%">Nomor HP</th>
-                            <td width="50%" class="text-left">{{$book->no_hp}}</td>
+                            <td width="50%" class="text-left">{{$last->no_hp}}</td>
                           </tr>
                           <tr>
                             <th width="50%">Tanggal</th>
-                            <td width="50%" class="text-left">{{$book->tanggal}}</td>
+                            <td width="50%" class="text-left">{{$last->tanggal}}</td>
                           </tr>
                           <tr>
                             <th width="50%">Waktu</th>
-                            <td width="50%" class="text-left">{{$book->jam}}</td>
+                            <td width="50%" class="text-left">{{$last->jam}}</td>
                           </tr>
                           <tr>
                             <th width="50%">Catatan</th>
-                            <td width="50%" class="text-left">{!!$book->note!!}</td>
+                            <td width="50%" class="text-left">{!!$last->note!!}</td>
                           </tr>
                           <tr>
                             <th width="50%">Total Transfer</th>

@@ -19,7 +19,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Paket Restoran</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$restaurant_package}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-ad fa-2x text-gray-300"></i>
@@ -36,7 +36,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Transaksi</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$pesanan}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -55,12 +55,33 @@
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Pending</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">13</div>
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$transaksi_pending}}</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-spinner fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Deny</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$transaksi_deny}}</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-trash fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
@@ -74,7 +95,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Sukses</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{$transaksi_success}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-clipboard-check fa-2x text-gray-300"></i>

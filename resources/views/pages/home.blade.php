@@ -48,7 +48,7 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="single_blog_item">
                             <div class="single_blog_img">
-                            <img src="{{ Storage::url($item->image)}}"alt="" class="img-responsive"/>
+                            <img src="{{Storage::url($item->image)}}" class="img-responsive"/>
                             </div>
                             <div class="single_blog_text">
                             <h3>{{ $item->title }}</h3>
