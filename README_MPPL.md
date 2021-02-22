@@ -40,6 +40,9 @@ Some documentation
 - https://www.academia.edu/24439157/AN_ONLINE_CINEMA_BOOKING_TICKET_PURCHASING_SYSTEM._A_CASE_STUDY_OF_GLOBAL_CINEMA_A_Project_Work_Submitted_in_Partial_Fulfillment_of_the_Requirement_For_BSc._Information_Technology
 - https://www.prodevelopertutorial.com/system-design-example-3-system-design-for-online-movie-ticket-booking-syst
 
+## Source Admin and User Auth
+- https://www.youtube.com/watch?v=iKRLrJXNN4M
+
 ## Ini Cara Buat Controller
 php artisan make:controller TestController
 

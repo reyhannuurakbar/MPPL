@@ -15,21 +15,50 @@
 //     return view('welcome');
 // });
 
-//view
+//User
 Route::get('/','HomeController@index')
 	->name('home');
+
 Route::get('/about','AboutController@index')
 	->name('about');
-Route::get('/promo','PromoController@index')
-	->name('promo');
+
+Route::get('/paket','PaketController@index')
+	->name('paket');
+
 Route::get('/blog','BlogController@index')
 	->name('blog');
-Route::get('/contact','ContactController@index')
-	->name('contact');
+
+Route::get('/details/{slug}','DetailsController@index')
+	->name('details');
+
+Route::get('/pay','PayController@index')
+	->name('pay');
+
+Route::get('/Pesan', 'PesananController@Pesen');
+
+Route::POST('/insertpesanan','PesananController@add');
+
+
+Route::get('/chekout','CheckoutController@index')
+	->name('chekout');
+
+
+//Multi auth admin
+
 //admin 
 Route::prefix('admin')
 	->namespace('Admin')
+	->middleware(['auth','admin'])//untuk admin agar yang login itu admin aja
 	->group(function(){
 		Route::get('/','DashboardController@index')
-		->name('dashboard');
+			->name('dashboard');
+		Route::resource('restaurant-package', 'RestaurantPackageController');
+		Route::resource('transaksi', 'TransaksiController');
+		Route::get('accepted/{id_pesanan}', 'TransaksiController@accepted');
+		Route::get('deny/{id_pesanan}', 'TransaksiController@deny');
+
 	});
+
+//Auth
+
+Auth::routes(['verify'=> true]);
