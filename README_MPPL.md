@@ -42,3 +42,18 @@ Some documentation
 
 ## Ini Cara Buat Controller
 php artisan make:controller TestController
+
+## Ini cara buat Auth
+php artisan make:auth
+
+login & register
+https://bootsnipp.com/snippets/92gmX
+
+### Buat Login
+https://www.youtube.com/watch?v=OUFmwAnFclo
+
+### Buat Multi Auth
+#### Part1
+https://www.youtube.com/watch?v=uE2uS0ZmTPk
+#### Part2
+https://www.youtube.com/watch?v=gpACQXVX2kA&list=PLe30vg_FG4OTO7KbQ6TByyY99AiSw1MDS&index=7
